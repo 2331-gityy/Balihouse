@@ -4,10 +4,15 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins",Arial, Helvetica, sans-serif;
+    --primary-color: rgb(241, 197, 36);
+    --gradient-color: rgba(255, 76, 76, 0.3);
+    --secondary-color: rgb(235, 131,23);
+    --white: #F4F6FF; 
 }
 .home{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://png.pngtree.com/thumb_back/fw800/background/20220307/pngtree-balinese-kecak-dance-bali-indonesia-song-evening-asian-photo-image_5141178.jpg);
+    background-image: linear-gradient(var(--gradient-color),var(--gradient-color),var(--gradient-color)), url(https://png.pngtree.com/thumb_back/fw800/background/20220307/pngtree-balinese-kecak-dance-bali-indonesia-song-evening-asian-photo-image_5141178.jpg);
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
     height: 100vh;
@@ -15,8 +20,11 @@
     justify-content: center;
 }
 .content-home{
-    color: white;
+    color: var(--white);
     text-align: center;
+}
+.content-home h4{
+    font-size: 1.1rem;
 }
 .content-home h1{
     font-family: "Pacifico", "Poppins",Arial, Helvetica, sans-serif;
@@ -24,5 +32,13 @@
     line-height: 60px;
 }
 .content-home p{
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+.start{
+    color: var(--white);
+    background-color: var(--secondary-color);
+    margin: 10px;
+    padding: 6px 25px;
+    border: solid var(--secondary-color);
+    border-radius: 5px;
 }
